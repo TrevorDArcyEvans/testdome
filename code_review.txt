@@ -1,0 +1,9 @@
+'periodName is an unused variable
+typo in GetStartt(); should be named 'GetStart()'
+unclear if DateTimes are being stored in UTC
+DateTime equals should really be done within a tolerance
+GetNextPeriod() overloads are confusing
+  GetNextPeriod(int) is unclear that it applies from current time
+GetNextPeriod(DateTime) makes no check that nextEnd is past start
+DateTime.Now is dependent on server location, should really use DateTime.UtcNow
+GetNextPeriod(int) makes no range checks ie allows negative/large numbers

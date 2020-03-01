@@ -1,0 +1,8 @@
+Traingle Tests
+Test 1, identify(10, 10, 10), returns EQUILATERAL, No exception expected
+Test 2, identify(10,10,10),returns ISOCELES, No exception expected
+Test 3, identify(3,4,5),returns SCALENE, No exception expected
+Test 4, identify(0,10,10),n/a, ArgumentOutOfRange exception expected
+Test 5, identify(-10,10,10),n/a, ArgumentOutOfRange exception expected
+Test 6, identify(300,10,10),n/a, InvalidTriangle exception expected
+Test 6, identify(int.Max,10,10),n/a, NumericOverflow exception expected?
