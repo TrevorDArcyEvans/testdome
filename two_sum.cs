@@ -21,6 +21,8 @@ class TwoSum
     return null;
   }
 
+  // stolen from:
+  //    https://stackoverflow.com/questions/36506164/find-two-sum-function-in-c-sharp
   public static Tuple<int, int> FindTwoSum2(IList<int> list, int sum)
   {
     var hs = new HashSet<int>();
