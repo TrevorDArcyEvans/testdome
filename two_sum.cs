@@ -21,6 +21,22 @@ class TwoSum
     return null;
   }
 
+  public static Tuple<int, int> FindTwoSum2(IList<int> list, int sum)
+  {
+    var hs = new HashSet<int>();
+    for (var i = 0; i < list.Count; i++)
+    {
+      var needed = sum - list[i];
+      if (hs.Contains(needed))
+      {
+        return Tuple.Create(list.IndexOf(needed), i);
+      }
+      hs.Add(list[i]);
+    }
+
+    return null;
+  }
+
   public static void Main(string[] args)
   {
     Tuple<int, int> indices = FindTwoSum(new List<int>() { 3, 1, 5, 7, 5, 9 }, 10);
