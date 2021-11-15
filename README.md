@@ -3,6 +3,11 @@ Sample answers to public C# sample questions at:<p>
 * https://www.testdome.com/d/c-sharp-interview-questions/18
 
 ## Comments
+* _07_10001_Prime_ asks to get the n-th prime.  This answer 'cheats' by loading an ordered list
+of primes off disk.  A 'conventional' answer would use a [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).
+  * Note that prime numbers have been found well in excess of the 10000-th prime and are 'well known'
+    ie there is no real need to compute them as someone has already done that.  The problem then reduces
+    to a simple lookup.
 * performance of _Sorted Search_ algorithm could be improved by implementing a binary search
   but I felt there was not sufficient time to do this
 * read requirements for _Decorator Stream_ question were a bit unclear
